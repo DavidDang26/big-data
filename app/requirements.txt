@@ -1,3 +1,5 @@
 Flask==2.3.2
 boto3==1.29.3
 pandas==2.1.0
+pyspark==3.2.1
+firebase-admin==6.2.0

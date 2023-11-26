@@ -1,13 +1,12 @@
 from flask import Flask, Response
-from generate_file import get_csv_url
+from generate_file import get_json_result
 
 app = Flask(__name__)
 
-
 @app.route("/")
-def hello_world():
-    url = get_csv_url()
-    return Response(response=url, status=200)
+def process():
+    json = get_json_result()
+    return Response(response=json, status=200)
 
 
 if __name__ == "__main__":
