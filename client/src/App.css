@@ -1,0 +1,12 @@
+.laptop-img {
+  width: 200px;
+}
+
+.laptop-container {
+  margin-top: 15px;
+  display: flex;
+}
+.input-category {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
