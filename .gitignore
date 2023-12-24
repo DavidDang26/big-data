@@ -1,1 +1,9 @@
-serviceAccountKey.json
+app/serviceAccountKey.json
+app/.env
+
+crawler/.env
+crawler/node_modules
+
+scheduler/.env
+scheduler/node_modules
+

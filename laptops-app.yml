@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: emails-app
+  name: laptops-app
   labels:
     type: api
-    service: emails-app
+    service: laptops-app
     language: python
 spec:
   replicas: 3
   selector:
     matchLabels:
       type: api
-      service: emails-app
+      service: laptops-app
   template:
     metadata:
       labels:
         type: api
-        service: emails-app
+        service: laptops-app
         language: python
     spec:
       containers:
         - name: api
-          image: kinginspecial/emails-app:v1
+          image: kinginspecial/laptops-app:v1
           env:
             - name: AWS_ACCESS_KEY_ID
               value: <aws-access-key>
